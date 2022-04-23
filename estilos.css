@@ -892,7 +892,7 @@ a {
 
 .contacto-wrap {
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -936,6 +936,7 @@ a {
 	font-weight: 400;
 	margin-bottom: 15px;
     font-family: 'Quicksand', sans-serif;
+    padding-top: 20px;
 }
 
 .contacto-contenido h2 i {
@@ -956,11 +957,13 @@ a {
 	margin-bottom: 20px;
     font-family: 'Quicksand', sans-serif;
     text-shadow: 1px 1px #000000;
+    margin-left: 50px
 }
 
 .contacto-contenido .emergencias {
     font-size: 24px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .fa-fire-alt:before, .fa-fire-flame-curved:before{
