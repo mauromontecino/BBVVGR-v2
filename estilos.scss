@@ -299,12 +299,14 @@ body {
 }
 
 /**HOME PRESENTACION**/
+.s-layout__content--aire{
+  padding-top: 10%;
+}
 .s-layout__content--presentacion {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
   max-width: 900px;
   margin: auto;
-  position: relative;
   top: 300px;
   p {
     line-height: 20px;
