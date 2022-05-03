@@ -1,4 +1,7 @@
 /**VARIABLES**/
+$letrasDef:"Quicksand", sans-serif;
+$colorDef: #FFC300;
+
 /** Estilos primarios **/
 * {
   box-sizing: border-box;
@@ -9,16 +12,16 @@ body {
   font-size: 1em;
   color: #333;
   margin: 0;
-}
-body h1 {
-  font-size: 1.4em;
-}
-body em {
-  font-style: normal;
-}
-body a {
-  text-decoration: none;
-  color: inherit;
+  h1 {
+    font-size: 1.4em;
+  }
+  em {
+    font-style: normal;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 /** Layout **/
@@ -92,9 +95,9 @@ body a {
   padding: 0;
   width: 15em;
   height: 45%;
-}
-.s-sidebar__nav ul li {
-  width: 100%;
+  li {
+    width: 100%;
+  }
 }
 
 .s-sidebar__nav-link {
@@ -102,21 +105,21 @@ body a {
   display: inline-block;
   width: 90%;
   height: 3.5em;
-}
-.s-sidebar__nav-link em {
-  position: absolute;
-  top: 80%;
-  left: 4em;
-  transform: translateY(-50%);
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 1px;
+  em {
+    position: absolute;
+    top: 80%;
+    left: 4em;
+    transform: translateY(-50%);
+    font-family: $letrasDef;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 }
 
 .s-sidebar__nav-link:hover {
-  color: #FFC300;
+  color: $colorDef;
   border-radius: 10px;
   margin: 0 10px;
 }
@@ -155,7 +158,7 @@ body a {
 
 /**Parrafos de SIDEBAR**/
 .s-sidebar__nav p {
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
   font-weight: 300;
   font-size: 12px;
   margin: 1.5em;
@@ -189,7 +192,7 @@ body a {
 
 .cta span {
   position: relative;
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
@@ -205,7 +208,7 @@ body a {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #FFC300;
+  stroke: $colorDef;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -278,7 +281,7 @@ body a {
   margin-bottom: 4em;
   margin-top: 4em;
   margin-left: 1em;
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
   text-transform: uppercase;
   letter-spacing: 5px;
   line-height: 1.8;
@@ -292,7 +295,7 @@ body a {
   width: 60px;
   height: 4px;
   content: "";
-  background: #FFC300;
+  background: $colorDef;
 }
 
 /**HOME PRESENTACION**/
@@ -303,27 +306,27 @@ body a {
   margin: auto;
   position: relative;
   top: 300px;
-}
-.s-layout__content--presentacion p {
-  line-height: 20px;
-  font-size: 16px;
-  color: #ffcc33;
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 0 50px;
-  margin: auto;
-  background-color: #db3f41;
-}
-.s-layout__content--presentacion h1 {
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 4em;
-  line-height: 90px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
+  p {
+    line-height: 20px;
+    font-size: 16px;
+    color: #ffcc33;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 50px;
+    margin: auto;
+    background-color: #db3f41;
+  }
+  h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 90px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
 }
 
 /**HOME MUSEO**/
@@ -385,7 +388,7 @@ body a {
 }
 
 .s-layout__content--boton--museo em:hover {
-  color: #FFC300;
+  color: $colorDef;
 }
 
 /**Resolution -675px**/
@@ -432,7 +435,7 @@ body a {
     left: 4em;
     transform: translateY(-50%);
     padding-top: 50px;
-    font-family: "Quicksand", sans-serif;
+    font-family: $letrasDef;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -535,13 +538,13 @@ body a {
   grid-template-rows: 25% 50% 25%;
   gap: 10px;
   grid-template-areas: "imgGaleria--1 imgGaleria--2 imgGaleria--2" "imgGaleria--1 imgGaleria--3 imgGaleria--4" "imgGaleria--5 imgGaleria--6 imgGaleria--6";
-}
-.galeriaDeImagImag img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  filter: sepia(50%);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: sepia(50%);
+  }
 }
 
 .galeriaDeImagImag img:hover {
@@ -593,17 +596,17 @@ body a {
   margin-top: 60px;
   margin-bottom: 60px;
   padding: 10px;
-}
-.container--galeria2 img {
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  filter: sepia(50%);
-}
-.container--galeria2 img:hover {
-  transform: scale(1.03);
-  transition: all 0.6s;
-  filter: sepia(0%);
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: sepia(50%);
+  }
+  img:hover {
+    transform: scale(1.03);
+    transition: all 0.6s;
+    filter: sepia(0%);
+  }
 }
 
 .row--galeria2 {
@@ -732,24 +735,24 @@ body a {
   position: relative;
   background: inherit;
   width: 50%;
-}
-.contenedor .content {
-  padding: 1em 0em 1em 2em;
-  background: rgba(246, 209, 85, 0.6);
-  position: relative;
-  border-radius: 0 300px 300px 0;
-}
-.contenedor .content p {
-  margin: 0;
-  font-size: 1em;
-  line-height: 22px;
-  color: #000000;
-}
-.contenedor .content h2 {
-  margin: 0 0 10px 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #df3b09;
+  .content {
+    padding: 1em 0em 1em 2em;
+    background: rgba(246, 209, 85, 0.6);
+    position: relative;
+    border-radius: 0 300px 300px 0;
+    p {
+      margin: 0;
+      font-size: 1em;
+      line-height: 22px;
+      color: #000000;
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #df3b09;
+    }
+  }
 }
 
 .contenedor.cIzq {
@@ -904,76 +907,76 @@ body a {
   padding: 10% 30px;
   align-content: center;
   align-items: center;
-}
-.contacto-contenido h1 {
-  font-size: 24px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 20px;
-  font-family: "Quicksand", sans-serif;
-}
-.contacto-contenido h2 {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  font-family: "Quicksand", sans-serif;
-  padding-top: 20px;
-}
-.contacto-contenido h2 i {
-  font-size: 16px;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  background: #f5f5f5;
-  color: #000;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
-}
-.contacto-contenido h2 .emergencias {
-  font-size: 24px;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.contacto-contenido p {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  font-family: "Quicksand", sans-serif;
-  text-shadow: 1px 1px #000000;
-  margin-left: 50px;
-}
-.contacto-contenido ul {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.contacto-contenido ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 5px;
-  margin-top: 5px;
-}
-.contacto-contenido ul li a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-}
-.contacto-contenido ul li a i {
-  font-size: 21px;
-  line-height: 22px;
-}
-.contacto-contenido form {
-  width: 100%;
-  height: auto;
-}
-.contacto-contenido iframe {
-  width: 100%;
-  height: 100%;
+  h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: $letrasDef;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: $letrasDef;
+    padding-top: 20px;
+    i {
+      font-size: 16px;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background: #f5f5f5;
+      color: #000;
+      border-radius: 50px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .emergencias {
+      font-size: 24px;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: $letrasDef;
+    text-shadow: 1px 1px #000000;
+    margin-left: 50px;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: 5px;
+      a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background: #fff;
+        border-radius: 50px;
+        i {
+          font-size: 21px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  form {
+    width: 100%;
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .contacto-contenido:nth-child(1) {
@@ -1045,7 +1048,7 @@ body a {
   color: #fff;
   font-size: 24px;
   font-weight: 300;
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -1088,59 +1091,58 @@ body a {
   margin: auto;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
   padding: 30px;
-}
-.wrapper .title {
-  font-size: 24px;
-  font-weight: 1000;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
-  color: #fec107;
-  text-transform: uppercase;
-  text-align: center;
-  text-shadow: 1px 1px #000;
-  font-family: "Quicksand", sans-serif;
-}
-.wrapper .form {
-  width: 100%;
-}
-.wrapper .form .inputfield {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-.wrapper .form .inputfield .textarea {
-  width: 100%;
-  height: 125px;
-  resize: none;
-}
-.wrapper .form .inputfield .custom_select {
-  position: relative;
-  width: 100%;
-  height: 37px;
-}
-.wrapper .form .inputfield .custom_select select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  padding: 8px 10px;
-  font-size: 15px;
-  border: 1px solid #d5dbd9;
-  border-radius: 3px;
-}
-.wrapper .form .inputfield label {
-  width: 200px;
-  color: #3f3e3e;
-  margin-right: 10px;
-  font-size: 14px;
-  font-weight: 800;
-  font-family: "Quicksand", sans-serif;
-}
-.wrapper .form .inputfield .input,
-.wrapper .wrapper .form .inputfield .textarea {
+  .title {
+    font-size: 24px;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    font-family: $letrasDef;
+  }
+  .form {
+    width: 100%;
+    .inputfield {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      .textarea {
+        width: 100%;
+        height: 125px;
+        resize: none;
+      }
+      .custom_select {
+        position: relative;
+        width: 100%;
+        height: 37px;
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          outline: none;
+          width: 100%;
+          height: 100%;
+          border: 0px;
+          padding: 8px 10px;
+          font-size: 15px;
+          border: 1px solid #d5dbd9;
+          border-radius: 3px;
+        }
+      }
+      label {
+        width: 200px;
+        color: #3f3e3e;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 800;
+        font-family: $letrasDef;
+      }
+    }
+  }
+  .form .inputfield .input,
+  .wrapper .form .inputfield .textarea {
   width: 100%;
   outline: none;
   border: 1px solid #a3a3a3;
@@ -1148,6 +1150,7 @@ body a {
   padding: 8px 10px;
   border-radius: 3px;
   transition: all 0.3s ease;
+  }
 }
 
 .wrapper .form .inputfield .custom_select:before {
@@ -1172,7 +1175,7 @@ body a {
   font-weight: 1000;
   letter-spacing: 1px;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
 }
 
 .wrapper .form .inputfield .check {
@@ -1229,7 +1232,7 @@ body a {
   cursor: pointer;
   border-radius: 10px;
   outline: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
   font-weight: 1000;
 }
 
@@ -1267,7 +1270,7 @@ body a {
 
 .text-center {
   color: rgba(255, 255, 255, 0.3);
-  font-family: "Quicksand", sans-serif;
+  font-family: $letrasDef;
   font-size: 0.9em;
 }
 
@@ -1290,7 +1293,5 @@ body a {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   color: white;
 }
-
-/*# sourceMappingURL=estilos.css.map */
 
 /*# sourceMappingURL=estilos.css.map */
