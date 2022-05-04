@@ -1,0 +1,165 @@
+/**PAGE SOBRE NOSOTROS**/
+.background__sobreNosotros--page {
+    background-image: url(img/b040ed1a8de5880dad1b1776a80c1ca91.jpg);
+    height: 2700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /**Linea de tiempo Sobre Nosotros**/
+  .lineaDeTiempo {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  
+  .contenedor {
+    padding: 55px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+    .content {
+      padding: 1em 0em 1em 2em;
+      background: rgba(246, 209, 85, 0.6);
+      position: relative;
+      border-radius: 0 300px 300px 0;
+      p {
+        margin: 0;
+        font-size: 1em;
+        line-height: 22px;
+        color: #000000;
+      }
+      h2 {
+        margin: 0 0 10px 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #df3b09;
+      }
+    }
+    &.cIzq {
+      left: 0;
+    }
+    &.cDer {
+      left: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: calc(50% - 8px);
+      right: -8px;
+      background: #ffffff;
+      border: 5px solid #df3b09;
+      border-radius: 16px;
+      z-index: 1;
+    }
+    &.cDer::after {
+      left: -8px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      top: calc(50% - 1px);
+      right: 8px;
+      background: #df3b09;
+      z-index: 1;
+    }
+    &.cDer::before {
+      left: 8px;
+    }
+    .fechaLinea {
+      position: absolute;
+      display: inline-block;
+      top: calc(44% - 10px);
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 1000;
+      color: #df3b09;
+      background-color: #c5c5c5;
+      border-radius: 8px;
+      padding: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 1;
+    }
+    &.cIzq .fechaLinea {
+      right: -90px;
+    }
+    &.cDer .fechaLinea {
+      left: -90px;
+    }
+    &.cDer .content {
+      padding: 1em 0em 1em 2em;
+      border-radius: 300px 0 0 300px;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 320px) and (max-width: 820px) {
+    .contenedor{
+      width: 100%;
+      &::before {
+        visibility: hidden;
+      }
+      &.cDer::after {
+        visibility: hidden;
+      }
+      &.cDer {
+        left: 0;
+      }
+      &::after {
+        visibility: hidden;
+      }
+      .content {
+        border-radius: 0;
+      }
+      &.cDer .content {
+        border-radius: 0;
+      }
+      &.cDer .fechaLinea {
+        left: 5px;
+        top: -10px;
+      }
+      &.cIzq .fechaLinea {
+        right: 5px;
+        top: -10px;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 470px) and (max-width: 820px) {
+    .contenedor{
+      &
+      .cDer {
+        padding-bottom: 20%;
+      }
+      &.cIzq {
+        padding-bottom: 20%;
+      }
+    }
+  }
+  @media only screen and (min-width: 821px) {
+    .contenedor{
+      .cDer {
+        padding-bottom: 15%;
+      }
+      &.cIzq {
+        padding-bottom: 15%;
+      }
+      .fechaLinea {
+        top: calc(30% - 10px);
+      }
+      &::before {
+        top: calc(34% - 1px);
+      }
+      &::after {
+        top: calc(34% - 8px);
+      }
+    }
+  }
+  

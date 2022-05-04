@@ -1,0 +1,181 @@
+/** Sidebar **/
+.s-sidebar__nav--container {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 15%;
+}
+
+.s-sidebar__nav--logo {
+  width: 120px;
+  height: 120px;
+}
+
+.s-sidebar__trigger {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  > i{
+    display: inline-block;
+  margin: 1.5em 0 0 1.5em;
+  color: #fff;
+  }
+}
+
+.s-sidebar__nav {
+  position: fixed;
+  top: 0;
+  left: -15em;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  width: 15em;
+  height: 100%;
+  background: #2C2C2C;
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  ul {
+    top: 4em;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 15em;
+    height: 45%;
+    li {
+      width: 100%;
+    }
+  }
+  p {
+    font-family: $letrasDef;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 1.5em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    height: 10%;
+  }
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+  left: 0;
+}
+
+.s-sidebar__nav-link {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 3.5em;
+  em {
+    position: absolute;
+    top: 80%;
+    left: 4em;
+    transform: translateY(-50%);
+    font-family: $letrasDef;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  &:hover {
+    color: $colorDef;
+    border-radius: 10px;
+    margin: 0 10px;
+  }
+  > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+  }
+  > i::before {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+  }
+  > img::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+/**BOTON DONAR AHORA**/
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 30px 20px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: block;
+    border-radius: 50px;
+    background: rgba(255, 204, 51, 0.05);
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  span {
+    position: relative;
+    font-family: $letrasDef;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: rgba(255, 0, 0, 0.8);
+    padding-left: 22px;
+  }
+  svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: $colorDef;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  &:hover:before {
+    width: 90%;
+    background: rgba(255, 204, 51, 0.7);
+  }
+  &:hover svg {
+    transform: translateX(0);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.fa-hand-holding-dollar {
+  padding-left: 4px;
+  color: #35b615;
+}

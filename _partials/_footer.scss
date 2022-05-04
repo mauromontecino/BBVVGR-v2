@@ -1,0 +1,28 @@
+/**FOOTER**/
+.bgPers {
+    background-color: #2C2C2C;
+  }
+  
+  .text-center {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: $letrasDef;
+    font-size: 0.9em;
+  }
+  
+  .btn-fb {
+    border-color: white;
+    color: white;
+    &:hover {
+      background-color: #2f55a4;
+      color: white;
+    }
+  }
+  
+  .btn-ig {
+    color: white;
+    border-color: white;
+    &:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: white;
+    }
+  }

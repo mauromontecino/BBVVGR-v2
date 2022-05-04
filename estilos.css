@@ -1,39 +1,3 @@
-/**VARIABLES**/
-/** Estilos primarios **/
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 1em;
-  color: #333;
-  margin: 0;
-}
-body h1 {
-  font-size: 1.4em;
-}
-body em {
-  font-style: normal;
-}
-body a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/** Layout **/
-.s-layout {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.s-layout__content {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
 /** Sidebar **/
 .s-sidebar__nav--container {
   width: 100%;
@@ -212,23 +176,6 @@ body a {
 .fa-hand-holding-dollar {
   padding-left: 4px;
   color: #35b615;
-}
-
-/**LOGO RECARGAR PAGINA INFERIOR DERECHA**/
-.subir {
-  height: 40px;
-  width: 40px;
-  background-color: orange;
-  border: 5px solid rgba(255, 0, 0, 0.8);
-  color: rgba(255, 0, 0, 0.8);
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 10px #333;
-  z-index: 2;
 }
 
 /**HOME**/
@@ -500,6 +447,79 @@ body a {
     visibility: hidden;
   }
 }
+/**PAGES MUSEO**/
+.s-layout__content--background--pageMuseo {
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.s-layout__content--background--pageMuseo::before {
+  filter: sepia(100%);
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url(img/36787816_1068706419921167_7190905787680555008_n.jpg);
+  background-size: cover;
+  opacity: 50%;
+  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.69) 100%), url(img/36787816_1068706419921167_7190905787680555008_n.jpg);
+}
+
+.s-layout__content--texto--pagesMuseo h2 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 25%;
+  color: #d63a3a;
+  position: relative;
+  font-family: "Beau Rivage", cursive;
+  letter-spacing: 5px;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black;
+  top: 100px;
+}
+.s-layout__content--texto--pagesMuseo p {
+  width: 90%;
+  float: right;
+  padding-right: 5%;
+  position: relative;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-size: 1.5em;
+  top: 150px;
+}
+
+.s-layout__content--background--pageMuseo2::before {
+  filter: grayscale(50%);
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url(img/15781068_644445825680564_2693884522929626034_n.jpg);
+  background-size: cover;
+  background-position: 0% 40%;
+  opacity: 50%;
+  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(204, 41, 0, 0.69) 100%), url(img/15781068_644445825680564_2693884522929626034_n.jpg);
+}
+
+.s-layout__content--background--pageMuseo3::before {
+  filter: grayscale(50%);
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url(img/15781317_644445812347232_8422335135320004716_n.jpg);
+  background-size: cover;
+  background-position: 0% 70%;
+  opacity: 60%;
+  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.6901960784) 100%), url(img/15781317_644445812347232_8422335135320004716_n.jpg);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .s-layout__content--texto--pagesMuseo h2 {
+    font-size: 2em;
+  }
+  .s-layout__content--texto--pagesMuseo p {
+    font-size: 1em;
+  }
+}
 /**PAGES GALERIA**/
 .galeriaDeImagImag {
   width: 100%;
@@ -587,97 +607,6 @@ body a {
   padding-top: 10px;
 }
 
-/**MODIFICACION BOOTSTRAP**/
-.carousel-indicators {
-  z-index: 1;
-}
-
-.page-item.active .page-link {
-  z-index: 1;
-  border-radius: 50px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.page-item:not(:first-child) .page-link {
-  border-radius: 50px;
-}
-.page-item:first-child .page-link {
-  border-radius: 50px;
-}
-
-/**PAGES MUSEO**/
-.s-layout__content--background--pageMuseo {
-  height: 600px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-.s-layout__content--background--pageMuseo::before {
-  filter: sepia(100%);
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-image: url(img/36787816_1068706419921167_7190905787680555008_n.jpg);
-  background-size: cover;
-  opacity: 50%;
-  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.69) 100%), url(img/36787816_1068706419921167_7190905787680555008_n.jpg);
-}
-
-.s-layout__content--texto--pagesMuseo h2 {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 25%;
-  color: #d63a3a;
-  position: relative;
-  font-family: "Beau Rivage", cursive;
-  letter-spacing: 5px;
-  font-size: 3em;
-  text-shadow: 1px 1px 2px black;
-  top: 100px;
-}
-.s-layout__content--texto--pagesMuseo p {
-  width: 90%;
-  float: right;
-  padding-right: 5%;
-  position: relative;
-  text-shadow: 1px 1px 2px rgb(255, 255, 255);
-  font-size: 1.5em;
-  top: 150px;
-}
-
-.s-layout__content--background--pageMuseo2::before {
-  filter: grayscale(50%);
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-image: url(img/15781068_644445825680564_2693884522929626034_n.jpg);
-  background-size: cover;
-  background-position: 0% 40%;
-  opacity: 50%;
-  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(204, 41, 0, 0.69) 100%), url(img/15781068_644445825680564_2693884522929626034_n.jpg);
-}
-
-.s-layout__content--background--pageMuseo3::before {
-  filter: grayscale(50%);
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-image: url(img/15781317_644445812347232_8422335135320004716_n.jpg);
-  background-size: cover;
-  background-position: 0% 70%;
-  opacity: 60%;
-  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.6901960784) 100%), url(img/15781317_644445812347232_8422335135320004716_n.jpg);
-}
-
-@media only screen and (min-width: 300px) and (max-width: 767px) {
-  .s-layout__content--texto--pagesMuseo h2 {
-    font-size: 2em;
-  }
-  .s-layout__content--texto--pagesMuseo p {
-    font-size: 1em;
-  }
-}
 /**PAGE SOBRE NOSOTROS**/
 .background__sobreNosotros--page {
   background-image: url(img/b040ed1a8de5880dad1b1776a80c1ca91.jpg);
@@ -1206,6 +1135,76 @@ body a {
 .btn-ig:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   color: white;
+}
+
+/** Estilos primarios **/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #333;
+  margin: 0;
+}
+body h1 {
+  font-size: 1.4em;
+}
+body em {
+  font-style: normal;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/** Layout **/
+.s-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.s-layout__content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+/**LOGO RECARGAR PAGINA INFERIOR DERECHA**/
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: orange;
+  border: 5px solid rgba(255, 0, 0, 0.8);
+  color: rgba(255, 0, 0, 0.8);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px #333;
+  z-index: 2;
+}
+
+/**MODIFICACION BOOTSTRAP**/
+.carousel-indicators {
+  z-index: 1;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  border-radius: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.page-item:not(:first-child) .page-link {
+  border-radius: 50px;
+}
+.page-item:first-child .page-link {
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
