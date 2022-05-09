@@ -40,9 +40,15 @@
     }
     &.cIzq {
       left: 0;
+      &::before{
+        top: calc(34% - 1px);
+      }
     }
     &.cDer {
       left: 50%;
+      &::before{
+        top: calc(50% - 1px);
+      }
     }
     &::after {
       content: "";
@@ -64,7 +70,6 @@
       position: absolute;
       width: 22px;
       height: 2px;
-      top: calc(50% - 1px);
       right: 8px;
       background: #df3b09;
       z-index: 1;
@@ -147,18 +152,18 @@
     .contenedor{
       .cDer {
         padding-bottom: 15%;
+        &::before {
+          
+        }
       }
       &.cIzq {
         padding-bottom: 15%;
-      }
-      .fechaLinea {
-        top: calc(30% - 10px);
-      }
-      &::before {
-        top: calc(34% - 1px);
-      }
-      &::after {
-        top: calc(34% - 8px);
+        &::after {
+          top: calc(34% - 8px);
+        }
+        .fechaLinea {
+          top: calc(30% - 10px);
+        }
       }
     }
   }

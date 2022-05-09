@@ -656,8 +656,14 @@
 .contenedor.cIzq {
   left: 0;
 }
+.contenedor.cIzq::before {
+  top: calc(34% - 1px);
+}
 .contenedor.cDer {
   left: 50%;
+}
+.contenedor.cDer::before {
+  top: calc(50% - 1px);
 }
 .contenedor::after {
   content: "";
@@ -679,7 +685,6 @@
   position: absolute;
   width: 22px;
   height: 2px;
-  top: calc(50% - 1px);
   right: 8px;
   background: #df3b09;
   z-index: 1;
@@ -759,14 +764,11 @@
   .contenedor.cIzq {
     padding-bottom: 15%;
   }
-  .contenedor .fechaLinea {
-    top: calc(30% - 10px);
-  }
-  .contenedor::before {
-    top: calc(34% - 1px);
-  }
-  .contenedor::after {
+  .contenedor.cIzq::after {
     top: calc(34% - 8px);
+  }
+  .contenedor.cIzq .fechaLinea {
+    top: calc(30% - 10px);
   }
 }
 /**PAGES CONTACTO**/
