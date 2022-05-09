@@ -1,2 +1,19 @@
 $letrasDef:"Quicksand", sans-serif;
 $colorDef: #FFC300 ;
+
+/**Font Weights**/
+$font-weights: (
+    "extra-small": 300, 
+    "small": 400, 
+    "medium": 500, 
+    "bold": 600, 
+    "extra-bold": 700
+    );
+
+/**Mixin**/
+@mixin content ($width: 100% , $height, $font-size, $text-aling ) {
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    text-align: $text-aling;
+}

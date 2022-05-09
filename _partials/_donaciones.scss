@@ -8,7 +8,7 @@
     padding: 30px;
     .title {
       font-size: 24px;
-      font-weight: 1000;
+      font-weight: map-get($map: $font-weights, $key: 'extra-bold');
       letter-spacing: 1px;
       margin-bottom: 25px;
       color: #fec107;
@@ -37,7 +37,7 @@
           border-radius: 10px;
           outline: none;
           font-family: $letrasDef;
-          font-weight: 1000;
+          font-weight: map-get($map: $font-weights, $key: 'extra-bold');
           &:hover {
             background: #ffd658;
           }
@@ -45,7 +45,7 @@
           p {
             font-size: 14px;
             color: #3f3e3e;
-            font-weight: 1000;
+            font-weight: map-get($map: $font-weights, $key: 'extra-bold');
             letter-spacing: 1px;
             margin: 0;
             font-family: $letrasDef;
@@ -89,21 +89,18 @@
             }
           }
         .textarea {
-          width: 100%;
-          height: 125px;
+          @include content (100% , 125px, unset , start );
           resize: none;
         }
         .custom_select {
+          @include content (100% , 37px, unset , start );
           position: relative;
-          width: 100%;
-          height: 37px;
           select {
+            @include content (100% , 100%, 15px , unset );
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             outline: none;
-            width: 100%;
-            height: 100%;
             border: 0px;
             padding: 8px 10px;
             font-size: 15px;
@@ -121,11 +118,10 @@
           }
         }
         label {
-          width: 200px;
+          @include content (200px , unset, 14px , start );
           color: #3f3e3e;
           margin-right: 10px;
-          font-size: 14px;
-          font-weight: 800;
+          font-weight: map-get($map: $font-weights, $key: 'extra-bold');
           font-family: $letrasDef;
         }
         & .input:focus,
