@@ -47,7 +47,7 @@
     }
   }
   p {
-    @include content (90% , 10%, 12px , center );
+    @include content (85% , 10%, 12px , center );
     font-family: $letrasDef;
     margin: 1.5em;
     color: rgba(255, 255, 255, 0.3);
