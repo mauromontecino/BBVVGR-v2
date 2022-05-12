@@ -1,7 +1,7 @@
 /**PAGE SOBRE NOSOTROS**/
 .background__sobreNosotros--page {
     background-image: url(img/b040ed1a8de5880dad1b1776a80c1ca91.jpg);
-    height: 2700px;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -47,7 +47,7 @@
     &.cDer {
       left: 50%;
       &::before{
-        top: calc(50% - 1px);
+        top: calc(35% - 5px);
       }
     }
     &::after {
@@ -55,7 +55,7 @@
       position: absolute;
       width: 16px;
       height: 16px;
-      top: calc(50% - 8px);
+      top: calc(35% - 11px);
       right: -8px;
       background: #ffffff;
       border: 5px solid #df3b09;
@@ -80,7 +80,7 @@
     .fechaLinea {
       position: absolute;
       display: inline-block;
-      top: calc(44% - 10px);
+      top: calc(30% - 10px);
       text-align: center;
       font-size: 1.5em;
       color: #df3b09;
@@ -150,7 +150,7 @@
   }
   @media only screen and (min-width: 821px) {
     .contenedor{
-      .cDer {
+      &.cDer {
         padding-bottom: 15%;
       }
       &.cIzq {
