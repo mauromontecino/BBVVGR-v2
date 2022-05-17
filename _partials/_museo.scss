@@ -16,7 +16,7 @@
       position: absolute;
       content: "";
       inset: 0;
-      background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.69) 100%), url(img/36787816_1068706419921167_7190905787680555008_n.jpg);
+      background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.69) 100%), url(../img/36787816_1068706419921167_7190905787680555008_n.jpg);
     }
   }
   
@@ -50,7 +50,7 @@
     content: "";
     inset: 0;
     background-position: 0% 40%;
-    background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(204, 41, 0, 0.69) 100%), url(img/15781068_644445825680564_2693884522929626034_n.jpg);
+    background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(204, 41, 0, 0.69) 100%), url(../img/15781068_644445825680564_2693884522929626034_n.jpg);
   }
   
   .s-layout__content--background--pageMuseo3::before {
@@ -59,7 +59,7 @@
     content: "";
     inset: 0;
     background-position: 0% 70%;
-    background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.6901960784) 100%), url(img/15781317_644445812347232_8422335135320004716_n.jpg);
+    background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.6901960784) 100%), url(../img/15781317_644445812347232_8422335135320004716_n.jpg);
   }
   
   @media only screen and (min-width: 300px) and (max-width: 767px) {

@@ -190,7 +190,7 @@
 
 /**HOME**/
 .s-layout__content--background {
-  background-image: url(img/background.jpg);
+  background-image: url(../img/background.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@
 
 /**HOME MUSEO**/
 .s-layout__content--background--museo {
-  background-image: url(img/Quienes-somos.jpg);
+  background-image: url(../img/Quienes-somos.jpg);
   background-position: center;
   opacity: 0.8;
   background-size: cover;
@@ -474,7 +474,7 @@
   position: absolute;
   content: "";
   inset: 0;
-  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.69) 100%), url(img/36787816_1068706419921167_7190905787680555008_n.jpg);
+  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.69) 100%), url(../img/36787816_1068706419921167_7190905787680555008_n.jpg);
 }
 
 .s-layout__content--texto--pagesMuseo h2 {
@@ -505,7 +505,7 @@
   content: "";
   inset: 0;
   background-position: 0% 40%;
-  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(204, 41, 0, 0.69) 100%), url(img/15781068_644445825680564_2693884522929626034_n.jpg);
+  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(204, 41, 0, 0.69) 100%), url(../img/15781068_644445825680564_2693884522929626034_n.jpg);
 }
 
 .s-layout__content--background--pageMuseo3::before {
@@ -514,7 +514,7 @@
   content: "";
   inset: 0;
   background-position: 0% 70%;
-  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.6901960784) 100%), url(img/15781317_644445812347232_8422335135320004716_n.jpg);
+  background-image: linear-gradient(to bottom, rgba(51, 204, 255, 0) 25%, rgba(0, 51, 204, 0.6901960784) 100%), url(../img/15781317_644445812347232_8422335135320004716_n.jpg);
 }
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
@@ -614,7 +614,7 @@
 
 /**PAGE SOBRE NOSOTROS**/
 .background__sobreNosotros--page {
-  background-image: url(img/b040ed1a8de5880dad1b1776a80c1ca91.jpg);
+  background-image: url(../img/b040ed1a8de5880dad1b1776a80c1ca91.jpg);
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -861,7 +861,7 @@
 }
 .contacto-contenido:nth-child(1) {
   flex: 30%;
-  background: url(img/DSC_0551-warp.jpg);
+  background: url(../img/DSC_0551-warp.jpg);
   color: #fff;
   background-size: cover;
   background-position: center;
