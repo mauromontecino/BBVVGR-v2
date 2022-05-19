@@ -60,13 +60,14 @@
 }
 .s-sidebar__nav p {
   width: 85%;
-  height: 10%;
+  height: auto;
   font-size: 12px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
   margin: 1.5em;
   color: rgba(255, 255, 255, 0.3);
-  font-weight: 300;
+  font-weight: 400;
+  text-shadow: 1px 1px black;
 }
 
 .s-sidebar__nav:hover,
@@ -1240,7 +1241,6 @@ body a {
 
 .d-md-block {
   text-shadow: 1px 1px black;
-  color: #FFC300;
   font-weight: 600;
 }
 

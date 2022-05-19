@@ -47,11 +47,12 @@
     }
   }
   p {
-    @include content (85% , 10%, 12px , center );
+    @include content (85% , auto, 12px , center );
     font-family: $letrasDef;
     margin: 1.5em;
     color: rgba(255, 255, 255, 0.3);
-    font-weight: map-get($map: $font-weights, $key: 'extra-small');
+    font-weight: map-get($map: $font-weights, $key: 'small');
+    text-shadow: 1px 1px black;
   }
 }
 
