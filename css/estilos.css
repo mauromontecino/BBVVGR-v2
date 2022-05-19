@@ -1238,6 +1238,12 @@ body a {
   border-radius: 50px;
 }
 
+.d-md-block {
+  text-shadow: 1px 1px black;
+  color: #FFC300;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=estilos.css.map */
 
 /*# sourceMappingURL=estilos.css.map */
