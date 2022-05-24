@@ -144,26 +144,13 @@
     }
   }
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 679px) {
     .contacto-contenido {
       &:nth-child(1) {
-        flex: 50%;
-      }
-      &:nth-child(2) {
-        flex: 50%;
-      }
-      &:nth-child(3) {
         flex: 100%;
       }
-    }
-  }
-  @media only screen and (max-width: 360px) {
-    .contacto-contenido{
-      &:nth-child(1) {
-        flex: 50%;
-      }
       &:nth-child(2) {
-        flex: 50%;
+        flex: 100%;
       }
       &:nth-child(3) {
         flex: 100%;
